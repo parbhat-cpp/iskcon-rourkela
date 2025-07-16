@@ -3,6 +3,7 @@ import { Open_Sans, Poppins } from "next/font/google";
 import { Toaster } from 'react-hot-toast';
 import "./globals.css";
 import Script from "next/script";
+import Navbar from "@/components/Homepage/Navbar";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <body
           className={`${poppins.variable} ${openSans.variable} antialiased`}
           >
+          <Navbar />
           {children}
           <Toaster />
         </body>

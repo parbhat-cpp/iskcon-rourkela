@@ -1,12 +1,17 @@
+'use client';
+
 import React from 'react'
 import SocialLink from './SocialLink'
 import { SOCIALS } from '@/app/constants'
 import { Button } from '../ui/button'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
-    <header className='sticky top-0 left-0 px-24 py-7 shadow-2xs'>
+    <header className='sticky top-0 left-0 px-24 py-7 shadow-2xs bg-white z-50'>
       <div className='flex justify-between items-center'>
         {/* Social links */}
         <div className='flex gap-3'>
@@ -21,7 +26,7 @@ const Navbar = () => {
           Icon
         </div>
         {/* Donation */}
-        <Button variant={'destructive'}>
+        <Button variant={'destructive'} onClick={() => router.push('/donate')}>
           Donate
         </Button>
       </div>
