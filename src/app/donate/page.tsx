@@ -35,7 +35,7 @@ const Donate = () => {
                     Mob: 8658490726
                 </p>
             </div>
-            <div className='flex gap-20'>
+            <div className='flex md:flex-row flex-col gap-20'>
                 <div className=''>
                     <Table>
                         <TableHeader>
