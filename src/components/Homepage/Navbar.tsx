@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='flex gap-3'>
           {
             Object.keys(SOCIALS).map((social) => (
-              <SocialLink key={SOCIALS[social].link} link={SOCIALS[social].link} icon={SOCIALS[social].icon} />
+              <SocialLink key={SOCIALS[social].link as string} link={SOCIALS[social].link as string} icon={SOCIALS[social].icon} />
             ))
           }
         </div>

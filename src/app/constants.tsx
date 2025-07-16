@@ -2,7 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { SiYoutubekids } from "react-icons/si";
 import { GrInstagram } from "react-icons/gr";
 
-export const SOCIALS = {
+export const SOCIALS: Record<string, Record<string, string | React.ReactNode>> = {
     facebook: {
         link: "https://www.facebook.com/iskconrkl/",
         icon: <FaFacebookF />,
