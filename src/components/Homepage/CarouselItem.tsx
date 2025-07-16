@@ -8,7 +8,7 @@ export interface CarouselItemProps {
 
 const CarouselItem = (props: CarouselItemProps) => {
     return (
-        <div className='h-[78vh] overflow-hidden'>
+        <div className='h-auto overflow-hidden'>
             <Image src={props.image} alt={props.alt} width={1000} height={1000} className='' />
         </div>
     )

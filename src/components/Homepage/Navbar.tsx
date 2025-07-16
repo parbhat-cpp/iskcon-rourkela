@@ -6,12 +6,13 @@ import { SOCIALS } from '@/app/constants'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image';
 
 const Navbar = () => {
   const router = useRouter();
 
   return (
-    <header className='sticky top-0 left-0 px-24 py-7 shadow-2xs bg-white z-50'>
+    <header className='sticky top-0 left-0 px-24 py-7 shadow-2xs bg-blue-50 z-50'>
       <div className='flex justify-between items-center'>
         {/* Social links */}
         <div className='flex gap-3'>
@@ -22,9 +23,7 @@ const Navbar = () => {
           }
         </div>
         {/* Iskcon rourkela icon */}
-        <div>
-          Icon
-        </div>
+        <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className=''/>
         {/* Donation */}
         <Button variant={'destructive'} onClick={() => router.push('/donate')}>
           Donate
