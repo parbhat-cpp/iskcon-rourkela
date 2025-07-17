@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import "./globals.css";
 import Script from "next/script";
 import Navbar from "@/components/Homepage/Navbar";
+import Footer from "@/components/Homepage/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -32,9 +33,10 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={`${poppins.variable} ${openSans.variable} antialiased`}
-          >
+        >
           <Navbar />
           {children}
+          <Footer />
           <Toaster />
         </body>
       </html>

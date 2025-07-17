@@ -7,13 +7,16 @@ import { Button } from '../ui/button'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image';
+import { CiMenuFries } from "react-icons/ci";
+import { IoCloseOutline } from "react-icons/io5";
+import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from '../ui/drawer';
 
 const Navbar = () => {
   const router = useRouter();
 
   return (
-    <header className='sticky top-0 left-0 md:px-24 px-7 py-7 shadow-2xs bg-blue-50 z-50'>
-      <div className='grid grid-cols-3 justify-between items-center'>
+    <header className='sticky top-0 left-0 md:px-24 px-7 md:py-7 py-5 shadow-2xs bg-blue-50 z-50'>
+      <div className='grid md:grid-cols-3 grid-cols-2 justify-between items-center'>
         {/* Social links */}
         <div className='md:flex hidden gap-3'>
           {
@@ -23,19 +26,58 @@ const Navbar = () => {
           }
         </div>
         {/* Iskcon rourkela icon */}
-        <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className='md:mx-auto mr-auto' />
+        <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className='md:mx-auto mr-auto md:h-[100px] md:w-[100px] h-[75px] w-[75px]' />
         {/* Donation */}
-        <div className='flex basis-2 gap-6 items-center ml-auto'>
-          <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-md animate-glow'>
-            Janmashtami Registration 2025
+        <div className='flex gap-3 items-center ml-auto'>
+          <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow'>
+            Student Competition Registration
           </Link>
-          <Button variant={'destructive'} onClick={() => router.push('/donate')}>
+          <Button variant={'destructive'} className='md:block hidden' onClick={() => router.push('/donate')}>
             Donate
           </Button>
+          {/* Show drawer on smaller screens */}
+          <Drawer direction='right'>
+            <DrawerTrigger asChild>
+              <button className='md:hidden block cursor-pointer'>
+                <CiMenuFries size={25} />
+              </button>
+            </DrawerTrigger>
+            <DrawerContent className='w-full bg-white'>
+              <div className="">
+                <DrawerHeader>
+                  <DrawerTitle>
+                    <DrawerClose asChild className='flex ml-auto cursor-pointer'>
+                      <IoCloseOutline size={28} />
+                    </DrawerClose>
+                  </DrawerTitle>
+                </DrawerHeader>
+                <div className="p-4 text-xl flex flex-col gap-3">
+                  <Link href={'/about'} className='hover:underline'>
+                    About
+                  </Link>
+                  <Link href={'/event'} className='hover:underline'>
+                    Event
+                  </Link>
+                  <Link href={'/about'} className='hover:underline'>
+                    About
+                  </Link>
+                  <Link href={'/support-us'} className='hover:underline'>
+                    Support us
+                  </Link>
+                  <Link href={'/connect'} className='hover:underline'>
+                    Connect
+                  </Link>
+                  <Link href={'/donate'} className='hover:underline'>
+                    Donate
+                  </Link>
+                </div>
+              </div>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
       {/* Navbar links */}
-      <div className='flex justify-between pt-7 pb-2'>
+      <div className='md:flex hidden justify-between pt-7 pb-2'>
         <Link href={'/'}>
           Home
         </Link>
