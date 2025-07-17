@@ -24,11 +24,11 @@ const Footer = () => {
                         <p>
                             Pincode: 769015
                         </p>
-                        <Link href={'tel:+91 9999999999'} className='hover:underline'>
-                            Mobile: +91 9999999999
+                        <Link href={'tel:+91 9668429415'} className='hover:underline'>
+                            Mobile: +91 9668429415
                         </Link>
-                        <Link href={'mailto:sridham.govinda@gmail'} className='hover:underline'>
-                            Email: sridham.govinda@gmail
+                        <Link href={'mailto:rourkelaiskcon@gmail.com'} className='hover:underline'>
+                            Email: rourkelaiskcon@gmail.com
                         </Link>
                     </div>
                 </div>

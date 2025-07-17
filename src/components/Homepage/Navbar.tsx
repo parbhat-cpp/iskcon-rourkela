@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Donation */}
         <div className='flex gap-3 items-center ml-auto'>
           <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow'>
-            Student Competition Registration
+            Janmasthami Contest Registration 2025
           </Link>
           <Button variant={'destructive'} className='md:block hidden' onClick={() => router.push('/donate')}>
             Donate
