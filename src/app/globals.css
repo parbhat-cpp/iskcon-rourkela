@@ -184,4 +184,18 @@ li {
   * {
     @apply border-border outline-ring/50;
   }
+   @keyframes glow {
+    0%, 100% {
+      color: black;
+      text-shadow: 0 0 0 #000;
+    }
+    50% {
+      color: #8A2BE2;
+      text-shadow: 0 0 8px #8A2BE2;
+    }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
 }
