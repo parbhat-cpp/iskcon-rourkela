@@ -29,7 +29,7 @@ const Navbar = () => {
         <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className='md:mx-auto mr-auto md:h-[100px] md:w-[100px] h-[75px] w-[75px]' />
         {/* Donation */}
         <div className='flex gap-3 items-center ml-auto'>
-          <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow'>
+          <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow' aria-label='Janmasthami Contest Registration Iskcon Rourkela'>
             Janmasthami Contest Registration 2025
           </Link>
           <Button variant={'destructive'} className='md:block hidden' onClick={() => router.push('/donate')}>
@@ -38,8 +38,8 @@ const Navbar = () => {
           {/* Show drawer on smaller screens */}
           <Drawer direction='right'>
             <DrawerTrigger asChild>
-              <button className='md:hidden block cursor-pointer'>
-                <CiMenuFries size={25} />
+              <button className='md:hidden block cursor-pointer' aria-label='Side Drawer Menu Iskcon'>
+                <CiMenuFries size={35} />
               </button>
             </DrawerTrigger>
             <DrawerContent className='w-full bg-white'>
@@ -52,22 +52,22 @@ const Navbar = () => {
                   </DrawerTitle>
                 </DrawerHeader>
                 <div className="p-4 text-xl flex flex-col gap-3">
-                  <Link href={'/about'} className='hover:underline'>
+                  <Link href={'/about'} className='hover:underline' aria-label='Iskon Rourkela About'>
                     About
                   </Link>
-                  <Link href={'/event'} className='hover:underline'>
+                  <Link href={'/event'} className='hover:underline' aria-label='Iskon Rourkela Event'>
                     Event
                   </Link>
-                  <Link href={'/about'} className='hover:underline'>
+                  <Link href={'/about'} className='hover:underline' aria-label='Iskon Rourkela About'>
                     About
                   </Link>
-                  <Link href={'/support-us'} className='hover:underline'>
+                  <Link href={'/support-us'} className='hover:underline' aria-label='Iskon Rourkela Support'>
                     Support us
                   </Link>
-                  <Link href={'/connect'} className='hover:underline'>
+                  <Link href={'/connect'} className='hover:underline' aria-label='Iskon Rourkela Connect'>
                     Connect
                   </Link>
-                  <Link href={'/donate'} className='hover:underline'>
+                  <Link href={'/donate'} className='hover:underline' aria-label='Iskon Rourkela Donate'>
                     Donate
                   </Link>
                 </div>
@@ -78,22 +78,22 @@ const Navbar = () => {
       </div>
       {/* Navbar links */}
       <div className='md:flex hidden justify-between pt-7 pb-2'>
-        <Link href={'/'}>
+        <Link href={'/'} aria-label='Iskon Rourkela Home'>
           Home
         </Link>
-        <Link href={'/about'}>
+        <Link href={'/about'} aria-label='Iskon Rourkela About'>
           About
         </Link>
-        <Link href={'/temple'}>
+        <Link href={'/temple'} aria-label='Iskon Rourkela Temple'>
           Temple
         </Link>
-        <Link href={'/event'}>
+        <Link href={'/event'} aria-label='Iskon Rourkela Event'>
           Event
         </Link>
-        <Link href={'/support-us'}>
+        <Link href={'/support-us'} aria-label='Iskon Rourkela Support'>
           Support us
         </Link>
-        <Link href={'/connect'}>
+        <Link href={'/connect'} aria-label='Iskon Rourkela Connect'>
           Connect
         </Link>
       </div>

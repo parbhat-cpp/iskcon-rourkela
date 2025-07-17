@@ -55,9 +55,13 @@ const Homepage = () => {
         </Carousel>
         <div className='py-7'>
           <section className='w-[80vw] flex justify-center flex-col mx-auto'>
-            <h1 className='text-center'>Welcome to ISKCON Rourkela</h1>
+            <h1 className='text-center'>Hare Krishna</h1>
+            <h2 className='text-center'>Welcome to ISKCON Rourkela</h2>
             <p>
-              Experience divine tranquility at ISKCON Rourkela, where devotion meets culture. Join us in celebrating the teachings of Lord Krishna through our vibrant temple, kirtan, and community activities. Explore our temple services, festivals, and opportunities to connect with like-minded devotees. Whether you’re seeking spiritual growth, donating for a noble cause, or attending our educational programs, ISKCON Rourkela is here to guide you on your path to peace and enlightenment.
+              Immerse yourself in the serene and uplifting atmosphere of ISKCON Rourkela — a sacred space where devotion, culture, and community come together. Celebrate the timeless teachings of Lord Krishna through soulful kirtans, vibrant festivals, and meaningful spiritual gatherings.
+            </p>
+            <p>
+              Explore our temple services, participate in devotional programs, and connect with fellow seekers on the path of Bhakti. Whether you wish to grow spiritually, contribute through donations, or join our educational initiatives, ISKCON Rourkela offers a welcoming path toward inner peace and divine connection.
             </p>
           </section>
           {/* add more sections below */}

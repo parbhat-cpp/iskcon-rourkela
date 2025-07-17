@@ -9,7 +9,7 @@ export interface HomepageSocialLink {
 const SocialLink = (props: HomepageSocialLink) => {
   return (
     <div className='p-2 border border-black'>
-      <Link href={props.link} className=''>
+      <Link href={props.link} className='' aria-label='Iskon Social Media'>
         {props.icon}
       </Link>
     </div>
