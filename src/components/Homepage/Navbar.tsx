@@ -29,7 +29,7 @@ const Navbar = () => {
         <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className='md:mx-auto mr-auto md:h-[100px] md:w-[100px] h-[75px] w-[75px]' />
         {/* Donation */}
         <div className='flex gap-3 items-center ml-auto'>
-          <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeAD2mP_ruYbwKVUmQM9KLScRJZIJtqLeXi7vkpCfjXPtkPUg/viewform?pli=1&pli=1'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow' aria-label='Janmasthami Contest Registration Iskcon Rourkela'>
+          <Link href={'https://forms.gle/zRJbHNbYdu48bjoMA'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow' aria-label='Janmasthami Contest Registration Iskcon Rourkela'>
             Janmasthami Contest Registration 2025
           </Link>
           <Button variant={'destructive'} className='md:block hidden' onClick={() => router.push('/donate')}>
