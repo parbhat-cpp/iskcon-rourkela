@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
                 <div className='space-y-3'>
                     <h4>
-                        Ligalities
+                        Legalities
                     </h4>
                     <div className='flex flex-col space-y-2 text-sm text-stone-300'>
                         <Link href={'/terms-condition'} className='hover:underline' aria-label='Iskon Rourkela Terms and Conditions'>
