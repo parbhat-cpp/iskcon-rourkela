@@ -17,12 +17,6 @@ export const SOCIALS: Record<string, Record<string, string | React.ReactNode>> =
     },
 }
 
-export const FOOTER_LINKS: Record<string, string> = {
-    "Terms and Conditions": "https://docs.google.com/document/d/1T6HI4VlLVRGpIdgTeGdVLpYd8fk001_TitkGztWjjzI/edit?usp=sharing",
-    "Privacy Policy": "https://docs.google.com/document/d/1jXtOh7DFRHmU0Etr3HE8rAnwjMw95Xshkus-07GsY04/edit?usp=sharing",
-    "Refund Policy": "https://docs.google.com/document/d/1VSUXm1LdCHUrMf5E70HhPkSrMnF44yV46YpbF-Y8-LY/edit?usp=sharing",
-}
-
 export const KEYWORDS = [
     "iskcon",
     "iskcon rourkela",

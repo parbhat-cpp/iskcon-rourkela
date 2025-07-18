@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ISKCON Rourkela",
+  title: { default: "ISKCON ROURKELA", template: "%s | ISKCON ROURKELA" },
   description: "Welcome to ISKCON Rourkela, a place where devotion is a way of life. Immerse yourself in a sacred space where chanting, wisdom, and community come together to nurture the soul.",
   twitter: {
     card: "summary_large_image",
