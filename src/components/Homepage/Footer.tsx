@@ -1,6 +1,6 @@
 "use client"
 
-import { SOCIALS } from '@/app/constants';
+import { FOOTER_LINKS, SOCIALS } from '@/app/constants';
 import Link from 'next/link';
 import React, { useState } from 'react'
 
@@ -62,12 +62,13 @@ const Footer = () => {
                         Legalities
                     </h4>
                     <div className='flex flex-col space-y-2 text-sm text-stone-300'>
-                        <Link href={'/terms-condition'} className='hover:underline' aria-label='Iskon Rourkela Terms and Conditions'>
-                            Terms and Conditions
-                        </Link>
-                        <Link href={'/privacy-policy'} className='hover:underline' aria-label='Iskon Rourkela Privacy Policy'>
-                            Privacy Policy
-                        </Link>
+                        {
+                            Object.keys(FOOTER_LINKS).map((link, index) => (
+                                <Link key={link + index} href={FOOTER_LINKS[link]} className='hover:underline' aria-label={`Iskon Rourkela ${link}`}>
+                                    {link}
+                                </Link>
+                            ))
+                        }
                     </div>
                 </div>
                 <div className='space-y-3'>
