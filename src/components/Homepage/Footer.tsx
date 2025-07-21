@@ -62,13 +62,13 @@ const Footer = () => {
                         Legalities
                     </h4>
                     <div className='flex flex-col space-y-2 text-sm text-stone-300'>
-                        <Link href={'/terms-and-conditions'} aria-label='ISKCON Rourkela Terms and condition'>
+                        <Link href={'/terms-and-conditions'} aria-label='ISKCON Rourkela Terms and condition' className='hover:underline'>
                             Terms and Conditions
                         </Link>
-                        <Link href={'/privacy-policy'} aria-label='ISKCON Rourkela Privacy Policy'>
+                        <Link href={'/privacy-policy'} aria-label='ISKCON Rourkela Privacy Policy' className='hover:underline'>
                             Privacy Policy
                         </Link>
-                        <Link href={'/refund-policy'} aria-label='ISKCON Rourkela Refund Policy'>
+                        <Link href={'/refund-policy'} aria-label='ISKCON Rourkela Refund Policy' className='hover:underline'>
                             Refund Policy
                         </Link>
                     </div>

@@ -76,6 +76,11 @@ const Navbar = () => {
           </Drawer>
         </div>
       </div>
+      <div className='w-full overflow-hidden'>
+        <div className='sliding'>
+          <p>Registration Link will be open on 24th July 2025</p>
+        </div>
+      </div>
       {/* Navbar links */}
       <div className='md:flex hidden justify-between pt-7 pb-2'>
         <Link href={'/'} aria-label='Iskon Rourkela Home'>
