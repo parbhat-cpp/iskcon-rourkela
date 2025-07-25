@@ -4,6 +4,8 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import CarouselItem from '@/components/Homepage/CarouselItem';
+import Image from 'next/image';
+import UpcomingEventImg from '@/components/Homepage/UpcomingEventImg';
 
 const Homepage = () => {
   return (
@@ -53,7 +55,7 @@ const Homepage = () => {
             alt={'Janmasthami 2025'}
           />
         </Carousel>
-        <div className='py-7'>
+        <div className='space-y-5'>
           <section className='w-[80vw] flex justify-center flex-col mx-auto'>
             <h1 className='text-center'>Hare Krishna</h1>
             <h2 className='text-center'>Welcome to ISKCON Rourkela</h2>
@@ -63,6 +65,18 @@ const Homepage = () => {
             <p>
               Explore our temple services, participate in devotional programs, and connect with fellow seekers on the path of Bhakti. Whether you wish to grow spiritually, contribute through donations, or join our educational initiatives, ISKCON Rourkela offers a welcoming path toward inner peace and divine connection.
             </p>
+          </section>
+          <section className='space-y-3 bg-accent pb-5'>
+            <div className='w-36 h-2 bg-black mx-auto'>
+
+            </div>
+            <h2 className='text-center'>
+              Upcoming Events
+            </h2>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-5 place-items-center w-[80vw] mx-auto'>
+              <UpcomingEventImg src='/janmasthami-event.webp' alt='Janmasthami Event 2025' />
+              <UpcomingEventImg src='/contest.webp' alt='Janmasthami Event 2025' />
+            </div>
           </section>
           {/* add more sections below */}
         </div>

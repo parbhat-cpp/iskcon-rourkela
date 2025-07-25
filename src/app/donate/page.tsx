@@ -35,7 +35,7 @@ const Donate = () => {
                     Mob: 8658490726
                 </p>
             </div>
-            <div className='grid ld:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
                 <div className=''>
                     <Table>
                         <TableHeader>
