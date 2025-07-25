@@ -214,6 +214,10 @@ li {
   .sliding {
     white-space: nowrap;
     width: 100%;
-    animation: slideLeft 10s linear infinite;
+    animation: slideLeft 12s linear infinite;
+  }
+
+  .sliding:hover {
+    animation-play-state: paused;
   }
 }

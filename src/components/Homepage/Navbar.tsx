@@ -78,7 +78,9 @@ const Navbar = () => {
       </div>
       <div className='w-full overflow-hidden'>
         <div className='sliding'>
-          <p>Registration Link will be open on 24th July 2025</p>
+          <Link href={'https://drive.google.com/drive/folders/1SLuRVd-cptDAnkGtwudO0qX8dWrbQ9OW?usp=sharing'} target='_blank' className='underline' aria-label='Janmasthami Quiz Guide Book Link'>
+            QUIZ GUIDE BOOK FOR JUNIOR AND SENIOR
+          </Link>
         </div>
       </div>
       {/* Navbar links */}
