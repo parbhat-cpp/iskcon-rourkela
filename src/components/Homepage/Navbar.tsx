@@ -91,8 +91,8 @@ const Navbar = () => {
         <Link href={'/about'} aria-label='Iskon Rourkela About'>
           About
         </Link>
-        <Link href={'/temple'} aria-label='Iskon Rourkela Temple'>
-          Temple
+        <Link href={'/gallery'} aria-label='Iskon Rourkela Temple'>
+          Gallery
         </Link>
         <Link href={'/event'} aria-label='Iskon Rourkela Event'>
           Event
