@@ -214,7 +214,7 @@ li {
   .sliding {
     white-space: nowrap;
     width: 100%;
-    animation: slideLeft 12s linear infinite;
+    animation: slideLeft 16s linear infinite;
   }
 
   .sliding:hover {

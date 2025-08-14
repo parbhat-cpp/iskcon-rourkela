@@ -52,24 +52,36 @@ const Navbar = () => {
                   </DrawerTitle>
                 </DrawerHeader>
                 <div className="p-4 text-xl flex flex-col gap-3">
-                  <Link href={'/about'} className='hover:underline' aria-label='Iskon Rourkela About'>
-                    About
-                  </Link>
-                  <Link href={'/event'} className='hover:underline' aria-label='Iskon Rourkela Event'>
-                    Event
-                  </Link>
-                  <Link href={'/about'} className='hover:underline' aria-label='Iskon Rourkela About'>
-                    About
-                  </Link>
-                  <Link href={'/support-us'} className='hover:underline' aria-label='Iskon Rourkela Support'>
-                    Support us
-                  </Link>
-                  <Link href={'/connect'} className='hover:underline' aria-label='Iskon Rourkela Connect'>
-                    Connect
-                  </Link>
-                  <Link href={'/donate'} className='hover:underline' aria-label='Iskon Rourkela Donate'>
-                    Donate
-                  </Link>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/donate'} className='hover:underline' aria-label='Iskon Rourkela Donate'>
+                      Donate
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/gallery'} aria-label='Iskon Rourkela Gallery'>
+                      Gallery
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/event'} className='hover:underline' aria-label='Iskon Rourkela Event'>
+                      Event
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/connect'} className='hover:underline' aria-label='Iskon Rourkela Connect'>
+                      Connect
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/support-us'} className='hover:underline' aria-label='Iskon Rourkela Support'>
+                      Support us
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild className='cursor-pointer'>
+                    <Link href={'/about'} className='hover:underline' aria-label='Iskon Rourkela About'>
+                      About
+                    </Link>
+                  </DrawerClose>
                 </div>
               </div>
             </DrawerContent>
@@ -88,11 +100,11 @@ const Navbar = () => {
         <Link href={'/'} aria-label='Iskon Rourkela Home'>
           Home
         </Link>
+        <Link href={'/gallery'} aria-label='Iskon Rourkela Gallery'>
+          Gallery
+        </Link>
         <Link href={'/about'} aria-label='Iskon Rourkela About'>
           About
-        </Link>
-        <Link href={'/temple'} aria-label='Iskon Rourkela Temple'>
-          Temple
         </Link>
         <Link href={'/event'} aria-label='Iskon Rourkela Event'>
           Event

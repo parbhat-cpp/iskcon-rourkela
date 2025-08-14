@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Toaster } from 'react-hot-toast';
 import "./globals.css";
 import Script from "next/script";
@@ -69,6 +70,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Toaster />
+          <GoogleAnalytics gaId="G-G4Z6HSCXYW" />
         </body>
       </html>
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />
