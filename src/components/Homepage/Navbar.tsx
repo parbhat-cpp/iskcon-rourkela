@@ -29,8 +29,8 @@ const Navbar = () => {
         <Image src='/iskcon-rkl-logo.png' alt='Iskcon Rourkela Logo' width={100} height={100} className='md:mx-auto mr-auto md:h-[100px] md:w-[100px] h-[75px] w-[75px]' />
         {/* Donation */}
         <div className='flex gap-3 items-center ml-auto'>
-          <Link href={'https://forms.gle/zRJbHNbYdu48bjoMA'} className='underline text-shadow-sky-300 md:text-xl text-sm animate-glow' aria-label='Janmasthami Contest Registration Iskcon Rourkela'>
-            Janmasthami Contest Registration 2025
+          <Link href={'/donate'} className='md:hidden block underline text-shadow-sky-300 md:text-xl text-sm animate-glow' aria-label='ISKCON Rourkela Donation'>
+            Donate
           </Link>
           <Button variant={'destructive'} className='md:block hidden' onClick={() => router.push('/donate')}>
             Donate
@@ -90,9 +90,7 @@ const Navbar = () => {
       </div>
       <div className='w-full overflow-hidden'>
         <div className='sliding'>
-          <Link href={'https://drive.google.com/drive/folders/1SLuRVd-cptDAnkGtwudO0qX8dWrbQ9OW?usp=sharing'} target='_blank' className='underline' aria-label='Janmasthami Quiz Guide Book Link'>
-            WRITTEN QUIZ GUIDE BOOK FOR JUNIOR AND SENIOR
-          </Link>
+          {/* add sliding links */}
         </div>
       </div>
       {/* Navbar links */}
