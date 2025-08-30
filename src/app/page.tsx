@@ -4,7 +4,6 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import CarouselItem from '@/components/Homepage/CarouselItem';
-import Image from 'next/image';
 import UpcomingEventImg from '@/components/Homepage/UpcomingEventImg';
 
 const Homepage = () => {
@@ -19,8 +18,8 @@ const Homepage = () => {
           className='md:w-[75vw] w-full mx-auto'
         >
           <CarouselItem
-            image={'/janmasthami2025.jpg'}
-            alt={'Janmasthami 2025'}
+            image={'/home.jpg'}
+            alt={'ISKCON HERO IMAGE'} 
           />
           <CarouselItem
             image={'/home1.jpg'}
@@ -74,8 +73,7 @@ const Homepage = () => {
               Upcoming Events
             </h2>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-5 place-items-center w-[80vw] mx-auto'>
-              <UpcomingEventImg src='/janmasthami-event.webp' alt='Janmasthami Event 2025' />
-              <UpcomingEventImg src='/contest.webp' alt='Janmasthami Event 2025' />
+              <UpcomingEventImg src='/radhastami.jpg' alt='Radhastami ISKCON Rourkela' />
             </div>
           </section>
           {/* add more sections below */}
