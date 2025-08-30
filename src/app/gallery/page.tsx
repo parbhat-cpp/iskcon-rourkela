@@ -7,9 +7,9 @@ import { useMediaQuery } from 'react-responsive'
 import ImageStack from '@/components/ImageStack'
 
 const imagesStack1 = [
-  { id: 1, img: "/gallery3.jpg" },
-  { id: 2, img: "/gallery1.jpg" },
-  { id: 3, img: "/gallery2.jpg" },
+  { id: 1, img: "/gallery1.jpg" },
+  { id: 2, img: "/gallery2.jpg" },
+  { id: 3, img: "/gallery3.jpg" },
   { id: 4, img: "/gallery4.jpg" }
 ];
 
@@ -18,6 +18,19 @@ const imagesStack2 = [
   { id: 2, img: "/gallery6.jpg" },
   { id: 3, img: "/gallery7.jpg" },
   { id: 4, img: "/gallery8.jpg" }
+];
+
+const imagesStack3 = [
+  { id: 1, img: "/gallery9.jpg" },
+  { id: 2, img: "/gallery10.jpg" },
+  { id: 3, img: "/gallery11.jpg" },
+  { id: 4, img: "/gallery12.jpg" }
+];
+
+const imagesStack4 = [
+  { id: 1, img: "/gallery13.jpg" },
+  { id: 2, img: "/gallery14.jpg" },
+  { id: 3, img: "/gallery15.jpg" },
 ];
 
 function LotusModel() {
@@ -42,35 +55,53 @@ function LotusModel() {
 useGLTF.preload('/models/lotus_flower_blooming_animation.glb')
 
 export default function Gallery() {
+  const galleryBreakpoint = useMediaQuery({ query: '(max-width: 874px)' })
+
   return (
     <main className='relative bg-violet-200 overflow-hidden'>
-      <div className='p-10 absolute top-0 left-0 w-full grid md:grid-cols-2 grid-cols-1 gap-3 z-40'>
-        <ImageStack
-          randomRotation={true}
-          sensitivity={180}
-          sendToBackOnClick={false}
-          cardDimensions={{ width:  400, height: 250 }}
-          cardsData={imagesStack1}
-        />
-        <div className='md:ml-[190px] mx-auto'>
+      <div className='p-10 w-full'>
+        <div className='grid sm:grid-cols-2 grid-cols-1 gap-5 place-items-center'>
           <ImageStack
             randomRotation={true}
             sensitivity={180}
             sendToBackOnClick={false}
-            cardDimensions={{ width: 400, height: 250 }}
+            cardDimensions={{ width: galleryBreakpoint ? 240 : 400, height: 250 }}
+            cardsData={imagesStack1}
+          />
+          <ImageStack
+            randomRotation={true}
+            sensitivity={180}
+            sendToBackOnClick={false}
+            cardDimensions={{ width: galleryBreakpoint ? 240 : 400, height: 250 }}
             cardsData={imagesStack2}
           />
         </div>
-      </div>
-      <div className='md:block hidden h-[60dvh]'>
-        <Canvas camera={{ position: [0, 5, 5] }}>
-          <ambientLight intensity={0.6} />
-          <directionalLight position={[0, 10, 5]} intensity={1} />
-          <Suspense fallback={null}>
-            <LotusModel />
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
+        <div className='h-[45vh]'>
+          <Canvas camera={{ position: [0, 5, 5] }}>
+            <ambientLight intensity={0.6} />
+            <directionalLight position={[0, 10, 5]} intensity={1} />
+            <Suspense fallback={null}>
+              <LotusModel />
+            </Suspense>
+            <OrbitControls />
+          </Canvas>
+        </div>
+        <div className='grid sm:grid-cols-2 grid-cols-1 gap-5 place-items-center'>
+          <ImageStack
+            randomRotation={true}
+            sensitivity={180}
+            sendToBackOnClick={false}
+            cardDimensions={{ width: galleryBreakpoint ? 240 : 400, height: 250 }}
+            cardsData={imagesStack3}
+          />
+          <ImageStack
+            randomRotation={true}
+            sensitivity={180}
+            sendToBackOnClick={false}
+            cardDimensions={{ width: galleryBreakpoint ? 240 : 400, height: 250 }}
+            cardsData={imagesStack4}
+          />
+        </div>
       </div>
     </main>
   )
