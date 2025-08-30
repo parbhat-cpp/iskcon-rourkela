@@ -4,7 +4,21 @@ import React, { useEffect, useRef, Suspense } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
-import Image from 'next/image'
+import ImageStack from '@/components/ImageStack'
+
+const imagesStack1 = [
+  { id: 1, img: "/gallery3.jpg" },
+  { id: 2, img: "/gallery1.jpg" },
+  { id: 3, img: "/gallery2.jpg" },
+  { id: 4, img: "/gallery4.jpg" }
+];
+
+const imagesStack2 = [
+  { id: 1, img: "/gallery5.jpg" },
+  { id: 2, img: "/gallery6.jpg" },
+  { id: 3, img: "/gallery7.jpg" },
+  { id: 4, img: "/gallery8.jpg" }
+];
 
 function LotusModel() {
   const group = useRef(null);
@@ -30,8 +44,26 @@ useGLTF.preload('/models/lotus_flower_blooming_animation.glb')
 export default function Gallery() {
   return (
     <main className='relative bg-violet-200 overflow-hidden'>
-      <div className='h-[60dvh]'>
-        <Canvas camera={{ position: [0, 2, 5] }}>
+      <div className='p-10 absolute top-0 left-0 w-full grid md:grid-cols-2 grid-cols-1 gap-3 z-40'>
+        <ImageStack
+          randomRotation={true}
+          sensitivity={180}
+          sendToBackOnClick={false}
+          cardDimensions={{ width:  400, height: 250 }}
+          cardsData={imagesStack1}
+        />
+        <div className='md:ml-[190px] mx-auto'>
+          <ImageStack
+            randomRotation={true}
+            sensitivity={180}
+            sendToBackOnClick={false}
+            cardDimensions={{ width: 400, height: 250 }}
+            cardsData={imagesStack2}
+          />
+        </div>
+      </div>
+      <div className='md:block hidden h-[60dvh]'>
+        <Canvas camera={{ position: [0, 5, 5] }}>
           <ambientLight intensity={0.6} />
           <directionalLight position={[0, 10, 5]} intensity={1} />
           <Suspense fallback={null}>
@@ -39,15 +71,6 @@ export default function Gallery() {
           </Suspense>
           <OrbitControls />
         </Canvas>
-      </div>
-      <div className='text-center py-2 bg-yellow-500 h-36'>
-        <h1>COMMING SOON</h1>
-      </div>
-      <div className='absolute md:-bottom-62 md:-left-62 -bottom-31 -left-31'>
-        <Image src={'/konark-wheel.png'} width={550} height={550} alt='' className='md:h-[550px] md:w-[550px] h-[250px] w-[250px]'/>
-      </div>
-      <div className='absolute md:-bottom-62 md:-right-62 -bottom-31 -right-31'>
-        <Image src={'/konark-wheel.png'} width={550} height={550} alt='' className='md:h-[550px] md:w-[550px] h-[250px] w-[250px]'/>
       </div>
     </main>
   )
