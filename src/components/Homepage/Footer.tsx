@@ -24,6 +24,9 @@ const Footer = () => {
                         <p>
                             Pincode: 769015
                         </p>
+                        <Link href={'tel:+91 9777719935'} className='hover:underline' aria-label='Iskon Rourkela Contact Number'>
+                            Mobile: +91 9777719935
+                        </Link>
                         <Link href={'tel:+91 7008443529'} className='hover:underline' aria-label='Iskon Rourkela Contact Number'>
                             Mobile: +91 7008443529
                         </Link>

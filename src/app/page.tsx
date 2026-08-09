@@ -14,11 +14,14 @@ const Homepage = () => {
     <>
       <main className="space-y-3">
         {/* apply for janmasthami */}
-        <section className="relative flex justify-center items-center min-h-60 mt-2 overflow-hidden bg-[#fffaf0] bg-[radial-gradient(circle_at_75%_50%,rgba(255,215,120,0.45),transparent_30%),radial-gradient(circle_at_15%_20%,rgba(180,200,110,0.18),transparent_20%),radial-gradient(circle_at_50%_100%,rgba(244,204,105,0.20),transparent_40%)]">
+        <section className="relative flex p-2 min-h-60 justify-center items-center mt-2 overflow-hidden bg-[#fffaf0] bg-[radial-gradient(circle_at_75%_50%,rgba(255,215,120,0.45),transparent_30%),radial-gradient(circle_at_15%_20%,rgba(180,200,110,0.18),transparent_20%),radial-gradient(circle_at_50%_100%,rgba(244,204,105,0.20),transparent_40%)]">
           <div className="space-y-6 z-10">
             <div className="md:space-y-2 text-center">
               <p className="md:text-5xl text-3xl text-primary-background font-bold font-sans">
-                Janmashtami 2026
+                Janmashtami Contest
+              </p>
+              <p className="md:text-5xl text-3xl text-primary-background font-bold font-sans">
+                2026
               </p>
               <p className="md:text-2xl">Be a part of our spiritual journey</p>
             </div>
@@ -35,21 +38,28 @@ const Homepage = () => {
           <Image
             src="/leaves.png"
             alt="ISKCON LEAVES"
-            className="absolute -top-12 -left-10 sm:h-[175px] h-[125px] w-auto z-0"
-            height={1000}
-            width={1000}
-          />
-          <Image
-            src="/leaves.png"
-            alt="ISKCON LEAVES"
-            className="absolute -bottom-14 left-10 md:h-[175px] h-[125px] w-auto -rotate-60 overflow-clip scale-[225%] opacity-90 z-0"
+            className="absolute -top-12 -left-10 sm:h-[175px] h-[135px] w-auto z-0"
             height={1000}
             width={1000}
           />
           <Image
             src="/temple.png"
             alt="ISKCON TEMPLE"
-            className="absolute right-0 bottom-0 h-auto lg:w-[350px] sm:w-[225px] w-[175px] z-0"
+            className="absolute md:right-0 -right-10 bottom-0 h-auto lg:w-[350px] sm:w-[225px] w-[210px] z-10"
+            height={1000}
+            width={1000}
+          />
+          <Image
+            src="/flute.png"
+            alt="ISKCON LEAVES"
+            className="absolute md:-bottom-18 -bottom-12 -left-10 h-auto md:w-[180px] w-[140px] rotate-[15deg]"
+            height={1000}
+            width={1000}
+          />
+          <Image
+            src="/lotus.png"
+            alt=""
+            className="h-auto w-12 absolute top-0 right-0"
             height={1000}
             width={1000}
           />
