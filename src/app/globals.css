@@ -7,6 +7,7 @@
   /** Base colors */
   --color-dark-a0: #000000;
   --color-light-a0: #ffffff;
+  --color-primary-background: #002e6c;
 
   /** Theme primary colors */
   --color-primary-a0: #bbd3f2;
@@ -31,6 +32,19 @@
   --color-surface-tonal-a30: #636366;
   --color-surface-tonal-a40: #7b7b7e;
   --color-surface-tonal-a50: #949496;
+
+  --color-cream: #FDF8EB;
+  --color-champagne: #FCECC8;
+  --color-pale-cream: #FDF2D9;
+
+  --color-navy: #041336;
+
+  --color-gold-light: #F6DAA1;
+  --color-gold: #D3B66F;
+  --color-saffron: #CE8C27;
+
+  --color-temple-brown: #8A4704;
+  --color-temple-gold-brown: #A45C09;
 }
 
 body {
@@ -144,6 +158,24 @@ li {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --primary-background: oklch(0.3163 0.1179 258.16);
+
+  --cream: oklch(0.979 0.018 89.4);
+  --champagne: oklch(0.947 0.050 86.9);
+  --pale-cream: oklch(0.963 0.035 87.1);
+
+  --navy: oklch(0.200 0.072 262.6);
+
+  --gold-light: oklch(0.898 0.079 84.7);
+  --gold: oklch(0.786 0.096 88.0);
+  --saffron: oklch(0.690 0.135 72.3);
+
+  --temple-brown: oklch(0.472 0.114 56.0);
+  --temple-gold-brown: oklch(0.547 0.125 60.2);
+
+  --near-black: oklch(0.197 0.009 334.6);
+  --warm-gray: oklch(0.506 0.031 77.9);
 }
 
 .dark {
